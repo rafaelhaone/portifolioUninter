@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 16%;
+    background-color: black;
+    
+}
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+}
+
+span{
+    color: rgb(50, 154, 219);
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist a {
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navlist a:hover{
+    color: rgb(50, 154, 219);
+    font-weight: 600;
+}
+
+
+.sobre {
+    padding: 150px 16% 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.sobre-foto img{
+    width: 100%;
+    height: 530px;
+    max-width: 530px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(50, 154, 219);
+    box-shadow: 0 0 20px rgb(50, 154, 219);
+
+}
+
+.sobre-texto h1{
+    color: rgb(50, 154, 219);
+}
+
+.educacao {
+    padding: 75px 16% 90px;
+    background-color: black;
+    text-align: center;    
+}
+
+.educacao-texto {
+    color: white;
+}
+
+.educacao-texto h1{
+    color: rgb(50, 154, 219);
+    font-weight: 900;
+}
+
+.portifolio {
+    padding: 75px 16% 90px;
+
+}
+
+.portifolio-titulo{
+    color: rgb(50, 154, 219);
+    text-align: center;
+    font-weight: 900;
+}
+
+.portifolio-conteudo {
+    
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+}
+
+.portifolio-conteudo img{
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+}
+
+.contato {
+    padding: 75px 16% 90px;
+    background-color: black;
+    text-align: center; 
+}
+
+.contato-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+
+}
+
+.contato-form form {
+    position: relative;
+    width: 600px;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+}
+
+form .botao {
+    padding: 11px 26px;
+    font-weight: 600;
+    font-size: 15px;
+    width: 30%;
+}
+
+form .botao:hover{
+    background: rgb(50, 154, 219) ;
+    color: white;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+}
+
+@media (max-width: 1700px){
+    header{
+        padding: 20px 8%;
+    }
+    section{
+        padding: 90px 8% 80px;
+    }
+}
+
+@media (max-width: 1380px){
+    header{
+        padding: 20px 5%;
+    }
+    section{
+        padding: 90px 5% 80px;
+    }
+}
+
+@media (max-width: 1240px){
+    .sobre{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    .sobre-foto img{
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        max-width: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto ;
+
+    }
+}
+
+@media (max-width: 570px){
+    .sobre-foto img{
+        text-align: center;
+        width: 100%;
+        height: 300px;
+        max-width: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto ;
+    }
+        
+}

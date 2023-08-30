@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Para linkar as fontes do google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head> 
+<body>
+    <!--Fazendo a aba de cima do site-->
+    <header>    
+        <a href="#" class="logo"> Rafael <span>Haone</span> </a>
+        
+        <ul class="navlist">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#educacao">Formação</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+    
+    <!--Criação de um "sobre mim" com foto-->
+    <section class="sobre" id="sobre">
+        <div class="sobre-foto">
+            <img src="img/ProfilePhoto.png" alt="Foto de perfil">
+        </div>
+
+        <div class="sobre-texto">
+            <h1>Sobre mim</h1>
+            <br>
+            <p>Olá! Me chamo Rafael Haone, tenho 27 anos, sou formado em Economia e curso Análise e Desenvolvimento de Sistemas a fim de migrar para a área da tecnologia.</p>
+            <br>
+            <p>Graças aos video games cresci apaixonado por tecnologia e, por consequência, meu maior hobbie é jogar!</p>
+        </div>
+    </section>
+
+    <!--Criação da aba "formação educanional"-->
+
+    <section class="educacao" id="educacao">
+        <div class="educacao-texto">
+            <h1>Formação Educacional</h1>
+            <br>
+            <p> <b>Análise e Desenvolvimento de Sistemas</b> - Uninter (2025)</p>
+            <br>
+            <p> <b>Economia</b> - Universidade Federal do Ceará (2019)
+            </p>
+            <br>
+            <p> <b>Inglês</b> - Avançado
+            </p>
+        </div>
+    </section>
+
+    <!--Criação da aba "portifólio"-->
+
+    <section class="portifolio" id="portifolio">
+        <div class="portifolio-titulo">
+            <h1>Meu Portifólio</h1>
+        </div>
+    
+        <div class="portifolio-conteudo">
+            <!--colocamos "tagert="_blank" para que ao clicar na imagem o link seja aberto em outra guia-->
+            <a href="https://github.com/rafaelhaone/projeto" target="_blank">
+            <img src="img/devlinks.jpg" alt=""></a>
+            <div class="projeto-nome">
+                <h5>DevLinks Rocketseat</h5>
+            </div>
+        </div>
+    </section>
+
+    <!--Criação da aba "contato"-->
+
+    <section class="contato" id="contato">
+        <div class="portifolio-titulo">
+            <h1>Contate-me</h1>
+        </div>
+
+        <div class="contato-form">
+            <form action="">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem aqui" required></textarea>
+                <input type="submit" name="" value="Enviar" class="botao">
+            </form>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    
+</body>
+</html>
